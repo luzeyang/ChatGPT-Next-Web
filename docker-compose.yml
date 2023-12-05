@@ -5,7 +5,7 @@ services:
     container_name: chatgpt-next-web
     image: yidadaa/chatgpt-next-web
     ports:
-      - 3001:3001
+      - 3000:3000
     environment:
       - OPENAI_API_KEY=$OPENAI_API_KEY
       - CODE=$CODE
@@ -22,7 +22,7 @@ services:
     container_name: chatgpt-next-web-proxy
     image: yidadaa/chatgpt-next-web
     ports:
-      - 3001:3001
+      - 3000:3000
     environment:
       - OPENAI_API_KEY=$OPENAI_API_KEY
       - CODE=$CODE
