@@ -27,7 +27,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v4
         with:
-          images: Fantastic/chatgpt-next-web
+          images: ${{ secrets.DOCKERHUB_USERNAME }}/chatgpt-next-web
           tags: |
             type=raw,value=latest
             type=ref,event=tag
